@@ -1,0 +1,313 @@
+
+/* Variables */
+:root{
+  --bgColor: #fff;
+  --bgColorAlt: #F2F2F2;
+  --textColor: rgba(0,0,0,0.87);
+  --textColorAlt: #848484;
+  --borderColor: #E4E4E4;
+}
+
+/* Base */
+*,*::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.container{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+  background-color: var(--bgColor);
+}
+
+.btn:hover{
+  background-color: var(--bgColorAlt);
+}
+
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  padding: 1em 0;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: .82em;
+  height: 100%;
+}
+
+.menu li{
+  padding: 0 1em;
+}
+
+.apps{
+  cursor: pointer;
+}
+
+.menu-user{
+  width: 2.5em;
+  cursor: pointer;
+}
+
+
+/* MAIN */
+
+.main{
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-img img{
+  width: 25em;
+}
+
+
+.content-search{
+  position: relative;
+}
+
+.search {
+  display: inline-block;
+  height: 3em;
+  width: 37em;
+  padding: 10px 3em;
+  border-radius: 20em;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+
+.search:focus{
+  box-shadow: 0 1px 5px #ccc;
+  outline: none;
+}
+
+.icon-search{
+  position: absolute;
+  left: 1.5em;
+  top: 1em;
+  opacity: .4;
+}
+
+.icon-audio{
+  font-size: 1.2em;
+  position: absolute;
+  right: 1em;
+  top: .7em;
+  color: #4285F4;
+  cursor: pointer;
+}
+
+
+.content-buttons{
+  margin-top: 2em;
+}
+
+.content-buttons button{
+  padding: .7em 1.5em;
+  font-size: .9em;
+  background-color: var(--bgColorAlt);
+  border: none;
+  color: var(--textColorAlt);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-buttons button:hover{
+  outline: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+  color: #333;
+}
+
+.content-buttons button a{
+  color: inherit;
+}
+
+
+.content-buttons p{
+  margin-top: 2em;
+  font-size: .8em;
+}
+
+
+/* FOOTER */
+
+.footer{
+  background-color: var(--bgColorAlt);
+}
+
+.footer-country{
+  padding: 1em 0;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.footer{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: .9em;
+  color:var(--textColor);
+}
+
+.footer-more .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu{
+  padding: 1em 0;
+  display: flex;
+}
+
+.footer-menu li{
+  padding: 0 1.5em 0 0;
+}
+
+.footer a{
+  color: inherit;
+}
+
+
+
+
+/* WINDOW USER */ 
+.window-user{
+  opacity: 0;
+  transition: 100ms;
+
+  width: 22em;
+  background-color: #fff;
+  box-shadow: 0 0 6px #999;
+  border-radius: 1px solid #bbb;
+  text-align: center;
+  border-radius: 10px;
+  padding: .5em 0;
+
+  position: absolute;
+  right: 3em;
+  top:4em;
+  z-index: 10;
+}
+
+.window-user img{
+  width: 5em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+.window-add{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1em 3em;
+  text-align: left;
+}
+
+.btn-accounts{
+  padding: .5em 1.5em;
+  border-radius: 1.5em;
+  border:1px solid #ddd;
+  background-color: var(--bgColor);
+  margin: 1em 0;
+}
+
+
+.btn-salir{
+  padding: .5em 1.5em;
+  border-radius: 3px;
+  border:1px solid #ddd;
+  background-color: var(--bgColor);
+  margin: 1em 0;
+}
+
+
+.window-user footer{
+  border-top: 1px solid #ddd;
+  padding: 1em 3em;
+  display: flex;
+  font-size: .8em;
+  color:var(--textColorAlt);
+  justify-content: space-between;
+}
+
+.window-user footer a{
+  color: inherit;
+}
+
+
+/* WINDOW APPS */
+.window-apps{
+  opacity: 0;
+  transition: 100ms;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 22em;
+  background-color: #fff;
+  box-shadow: 0 0 6px #999;
+  border-radius: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 1em;
+
+  position: absolute;
+  right: 3em;
+  top:4em;
+  z-index: 10;
+}
+
+.window-apps article{
+  width: 33.33%;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.window-apps article:hover{
+  background-color: var(--bgColorAlt);
+}
+
+
+.window-apps img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+
+/* SHOW WINDOWS USER */
+.show-window{
+  opacity: 1;
+}
+
