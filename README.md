@@ -13,6 +13,7 @@ La página es muy parecida a la original y se pueden hacer busquedas , lo hice c
 
 ### Imágenes
 ![Inicio](/screenshots/img.png)
+![Ventana modal del perfil](/screenshots/img2.png)
 
 
 ### Desarrollado por "Andres Parra", <andreparragn@gmail.com>
