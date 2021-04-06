@@ -16,4 +16,4 @@ La página es muy parecida a la original y se pueden hacer busquedas , lo hice c
 ![Ventana modal del perfil](/screenshots/img2.png)
 
 
-### Desarrollado por "Andres Parra", <andreparragn@gmail.com>
+### Desarrollado por "@soyandresgarzon",
